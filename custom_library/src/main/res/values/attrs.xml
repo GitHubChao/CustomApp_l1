@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SingleItemView">
+        <attr name="iconSrc" format="reference" />
+        <attr name="icon_width" format="dimension" />
+        <attr name="icon_height" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="text_font_size" format="dimension" />
+        <attr name="text_font_color" format="color" />
+        <attr name="text2" format="string" />
+        <attr name="text2_font_size" format="dimension" />
+        <attr name="text2_font_color" format="color" />
+        <attr name="isShowMarginTopView" format="boolean" />
+        <attr name="isShowRightArrow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiItemView">
+        <attr name="titleArray" format="reference" />
+        <attr name="iconArray" format="reference" />
+        <attr name="itemFontSize" format="dimension" />
+        <attr name="itemFontColor" format="color" />
+        <attr name="isShowListRightIcon" format="boolean" />
+        <attr name="isShowItemTopView" format="boolean" />
+    </declare-styleable>
+
+</resources>
