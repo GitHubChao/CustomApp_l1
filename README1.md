@@ -26,19 +26,6 @@
  # SingItemView
  # xml中添加
  
- <com.chao.custom_library.view.SingleItemView
-        android:id="@+id/fiv_singleView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:iconSrc="@mipmap/ic_launcher"
-        app:isShowRightArrow="true"
-        app:text="文本1"
-        app:text2="文本2"
-        app:text2_font_color="#FF0000"
-        app:text2_font_size="13sp"
-        app:text_font_color="#00FF00"
-        app:text_font_size="14sp" />
- 
  # MultiItemView
  # Xml添加
  
