@@ -81,7 +81,19 @@
           </string-array>
      </resources>
  
- 
+ # How to use
+ ## Step1
+ 	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+## Step2
+     dependencies {
+	        implementation 'com.github.GitHubChao:CustomApp_l1:Tag'
+	}
+     
  
  
  
