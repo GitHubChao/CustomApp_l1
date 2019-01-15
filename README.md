@@ -1,6 +1,6 @@
 # CustomApp_l1
 自定义view
-
+![Image text](https://github.com/GitHubChao/CustomApp_l1/blob/master/imgsFolder/%E7%A4%BA%E4%BE%8B%E5%9B%BE.jpg)
 # 1、CustomDialog
 
 # 代码案例
