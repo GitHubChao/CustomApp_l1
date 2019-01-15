@@ -1,9 +1,9 @@
 # CustomApp_l1
 自定义view
 ![Image text](https://github.com/GitHubChao/CustomApp_l1/blob/master/imgsFolder/%E7%A4%BA%E4%BE%8B%E5%9B%BE.jpg)
-# 1、CustomDialog
+## 1、CustomDialog
 
-# 代码案例
+### 代码案例
      kotlin写法：
      val textView = this.findViewById<TextView>(R.id.tv_textview)
         textView.setOnClickListener { it ->
@@ -23,8 +23,8 @@
               
  # 2、适用于个人设置页面配置各个条目   
  
- # SingItemView
- # xml中添加
+ ## SingItemView（单条）
+ ### xml中添加
  
      <com.chao.custom_library.view.SingleItemView
         android:id="@+id/fiv_singleView"
@@ -39,8 +39,8 @@
         app:text_font_color="#00FF00"
         app:text_font_size="14sp" />
         
- # MultiItemView
- # Xml添加
+ ## MultiItemView（多条）
+ ### Xml添加
  
     <com.chao.custom_library.view.MultiItemView
         android:id="@+id/fiv_multiItemView"
@@ -49,8 +49,22 @@
         app:iconArray="@array/icon_list"
         app:titleArray="@array/title_list" />
         
-        
-# \main\res\values\arrays.xml 文件添加内容
+### Activity Code
+        MultiItemView fiv_multiItemView = this.findViewById(R.id.fiv_multiItemView);
+        fiv_multiItemView.setOnMultiItemClickListener(new MultiItemView.OnclickListener() {
+            @Override
+            public void onItemClick(int i) {
+                switch (i) {
+                    case 0:
+                    case 1:
+                    case 2:
+                        Toast.makeText(TestActivity.this, i + "", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+            }
+        });
+     
+## \main\res\values\arrays.xml 文件添加内容
 
      <?xml version="1.0" encoding="utf-8"?>
      <resources>
