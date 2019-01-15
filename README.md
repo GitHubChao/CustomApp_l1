@@ -4,7 +4,7 @@
 # 1、CustomDialog
 
 # 代码案例
-
+     kotlin写法：
      val textView = this.findViewById<TextView>(R.id.tv_textview)
         textView.setOnClickListener { it ->
             CustomDialog.Builder(this)
