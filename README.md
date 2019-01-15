@@ -90,8 +90,8 @@
 		}
 	}
 ## Step2
-     dependencies {
-	        implementation 'com.github.GitHubChao:CustomApp_l1:Tag'
+	dependencies {
+	        implementation 'com.github.GitHubChao:CustomApp_l1:v1.0.0'
 	}
      
  
