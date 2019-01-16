@@ -27,14 +27,17 @@ public class CustomDialog extends Dialog {
 
     public CustomDialog(@NonNull Context context) {
         super(context);
+        setCanceledOnTouchOutside(true);
     }
 
     public CustomDialog(@NonNull Context context, @StyleRes int themeResId) {
-        super(context, themeResId);
+        super(context, themeResId);        
+        setCanceledOnTouchOutside(true);
     }
 
     protected CustomDialog(@NonNull Context context, boolean cancelable, @Nullable OnCancelListener cancelListener) {
-        super(context, cancelable, cancelListener);
+        super(context, cancelable, cancelListener);        
+        setCanceledOnTouchOutside(true);
     }
 
     public static class Builder {
