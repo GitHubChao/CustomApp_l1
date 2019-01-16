@@ -4,22 +4,25 @@
 ## 1、CustomDialog
 
 ### 代码案例
-     kotlin写法：
-     val textView = this.findViewById<TextView>(R.id.tv_textview)
-        textView.setOnClickListener { it ->
-            CustomDialog.Builder(this)
-                    .setTitle("测试标题")
-                    .setMessage("对话框消息\n测试消息")
-                    .setLeftButton("左侧按钮") {
-                        Toast.makeText(this, "测试", Toast.LENGTH_SHORT).show()
+        new CustomDialog.Builder(this)
+                .setTitle("标题")
+                .setMessage("内容")
+                .setLeftButton("确定", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
                     }
-                    .setRightButton("右侧按钮") {
-                        Toast.makeText(this, "测试右侧", Toast.LENGTH_SHORT).show()
+                })
+                .setRightButton("取消", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
                     }
-                    .setLeftButtonTxtColor(resources.getColor(R.color.colorAccent))
-                    .setRightButtonTxtColor(resources.getColor(R.color.colorPrimary))
-                    .create()
-                    .show()
+                })
+                .setLeftButtonTxtColor(this.getResources().getColor(R.color.colorAccent))
+                .setRightButtonTxtColor(this.getResources().getColor(R.color.colorPrimary))
+                .create()
+                .show();
               
  # 2、适用于个人设置页面配置各个条目   
  
